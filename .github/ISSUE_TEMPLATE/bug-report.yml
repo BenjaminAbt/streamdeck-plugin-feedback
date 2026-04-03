@@ -75,8 +75,8 @@ body:
     attributes:
       label: Does reinstalling the plugin resolve the issue?
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
 
