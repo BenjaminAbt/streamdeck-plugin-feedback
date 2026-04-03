@@ -1,0 +1,86 @@
+name: Feedback
+description: Share general feedback about a Stream Deck plugin
+title: "[FEEDBACK] "
+labels:
+  - feedback
+
+body:
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Select the plugin your feedback is about
+      options:
+        # Add new plugins here ↓
+        - Leetify Stats
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin Version
+      description: Example: 1.2.3
+      placeholder: 1.2.3
+    validations:
+      required: false
+
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: Feedback Type
+      description: What kind of feedback would you like to share?
+      options:
+        - General feedback
+        - Usability
+        - Performance
+        - Documentation
+        - User interface
+        - Feature idea
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: short_title
+    attributes:
+      label: Short Title
+      description: One-line summary of your feedback
+      placeholder: Example: Great plugin, but setup is a bit confusing
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: Tell us what you like, dislike, or would improve
+      placeholder: Share your thoughts here
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case (optional)
+      description: Describe how you are using the plugin
+      placeholder: Example: I use this plugin daily to control my streaming scenes
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggestions (optional)
+      description: Do you have ideas on how this could be improved?
+      placeholder: Share any suggestions or ideas
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag & drop screenshots if they help explain your feedback
+    validations:
+      required: false
