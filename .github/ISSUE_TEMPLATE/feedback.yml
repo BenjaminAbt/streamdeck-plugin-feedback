@@ -20,7 +20,7 @@ body:
     id: plugin_version
     attributes:
       label: Plugin Version
-      description: Example: 1.2.3
+      description: "Example: 1.2.3"
       placeholder: 1.2.3
     validations:
       required: false
@@ -46,7 +46,7 @@ body:
     attributes:
       label: Short Title
       description: One-line summary of your feedback
-      placeholder: Example: Great plugin, but setup is a bit confusing
+      placeholder: "Example: Great plugin, but setup is a bit confusing"
     validations:
       required: true
 
@@ -64,7 +64,7 @@ body:
     attributes:
       label: Use Case (optional)
       description: Describe how you are using the plugin
-      placeholder: Example: I use this plugin daily to control my streaming scenes
+      placeholder: "Example: I use this plugin daily to control my streaming scenes"
     validations:
       required: false
 
