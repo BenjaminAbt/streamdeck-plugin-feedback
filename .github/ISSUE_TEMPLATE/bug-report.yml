@@ -1,0 +1,148 @@
+name: Bug report
+description: Report a bug in a Stream Deck plugin
+title: "[BUG] "
+labels:
+  - bug
+
+body:
+
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Select the affected plugin
+      options:
+        # Add new plugins here ↓
+        - Leetify Stats
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin Version
+      description: Example: 1.2.3
+      placeholder: 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: short_title
+    attributes:
+      label: Short Title
+      description: One-line summary of the issue
+      placeholder: Example: Button action does not update state
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect instead?
+      placeholder: Describe the issue clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Help us reproduce the issue
+      placeholder: |
+        1. Open Stream Deck
+        2. Add action
+        3. Press button
+        4. Issue appears
+    validations:
+      required: false
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Does the issue happen consistently?
+      options:
+        - Always
+        - Sometimes
+        - Only once
+        - Unable to reproduce again
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reinstall_fix
+    attributes:
+      label: Does reinstalling the plugin resolve the issue?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Drag & drop screenshots if helpful
+    validations:
+      required: false
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Windows 10
+        - Windows 11
+        - macOS Sonoma
+        - macOS Ventura
+        - macOS Monterey
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: streamdeck_version
+    attributes:
+      label: Stream Deck Software Version
+      placeholder: Example: 7.4.0 (22712)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device_model
+    attributes:
+      label: Stream Deck Device Model
+      options:
+        - Stream Deck Mini
+        - Stream Deck MK.2
+        - Stream Deck XL
+        - Stream Deck +
+        - Stream Deck Neo
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: |
+        Attach relevant Stream Deck logs if available.
+
+        macOS:
+        ~/Library/Logs/ElgatoStreamDeck/
+
+        Windows:
+        %appdata%\Elgato\StreamDeck\logs
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: Anything else that might help us debug the issue
+    validations:
+      required: false
