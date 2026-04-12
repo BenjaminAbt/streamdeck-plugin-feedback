@@ -12,7 +12,9 @@ body:
       description: Select the plugin your feedback is about
       options:
         # Add new plugins here ↓
-        - Leetify Stats
+        - DeckStats World of Tanks
+        - DeckPulse Synology DSM 7
+        - Other
     validations:
       required: true
 
