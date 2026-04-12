@@ -13,7 +13,8 @@ body:
       description: Select the affected plugin
       options:
         # Add new plugins here ↓
-        - Leetify Stats
+        - DeckStats World of Tanks
+        - DeckPulse Synology DSM 7
         - Other
     validations:
       required: true
