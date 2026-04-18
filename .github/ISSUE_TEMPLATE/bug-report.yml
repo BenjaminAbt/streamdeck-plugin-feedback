@@ -15,6 +15,7 @@ body:
         # Add new plugins here ↓
         - DeckStats World of Tanks
         - DeckPulse Synology DSM 7
+        - DeckPulse .NET
         - Other
     validations:
       required: true
