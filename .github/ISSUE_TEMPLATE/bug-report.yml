@@ -13,8 +13,11 @@ body:
       description: Select the affected plugin
       options:
         # Add new plugins here ↓
-        - DeckStats World of Tanks
+        - FritzBox Monitor
+        - Cloudflare Cost
         - DeckPulse Synology DSM 7
+        - DeckStats CounterStrike
+        - DeckStats World of Tanks
         - DeckPulse .NET
         - Other
     validations:
